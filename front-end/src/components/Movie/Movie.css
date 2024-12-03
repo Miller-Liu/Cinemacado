@@ -1,0 +1,80 @@
+/* imports from Google Fonts */
+/* TODO: you may need to import a font first before you can use it for the movie title */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body { /* the body class allows to automatically format the HTML body without having to specify the class; notice it is NOT .body */
+    margin: 0;
+    padding: 20px; /* This is the padding the overall body(includes the search bar and all the results) has */
+    background-color: #f0f0f0;
+}
+.container {
+    position: relative;
+    width: 100%; /* ensures that the width of the movie posters are not cut off */
+    padding-top: 150%; /* makes all our movie poster ratios 2:3 */
+    transition: transform 0.3s; /* makes the hover effect smoother */
+}
+
+.container:hover { /* all the .container styling initially still applies here */
+    transform: scale(1.05); /* slightly enlarge on hover */
+}
+
+.poster {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; /* these two properties makes it so the image is resized to appropriately fits */
+    transition: filter 0.3s; /* makes the hover effect smoother */
+}
+
+.container:hover .poster {
+    filter: brightness(0.8); /* Darken the poster on hover */
+}
+
+.overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* positions dark overlay on poster */
+
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centers text on overlay */
+
+    background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+    opacity: 0;
+    /* TODO: change the r, g, b, values to make the overlay a dark green instead of a gray. A color picker tool like tinyurl.com/avocolor may be useful! */
+    /* the fourth value in the parentheses is for opacity (0 is transparent, 1 is opaque), you shouldn't need to change this value */
+
+    transition: opacity 0.3s; /* smooth overlay transition */
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif; /* TODO: Change the font here, you may need to import it first, check the top of this file for an example */
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.add-review-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .container:hover .add-review-button {
+    opacity: 1;
+  }

@@ -1,0 +1,78 @@
+/* src/pages/Profile/Profile.css */
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 50px;
+  }
+  
+  .auth-buttons {
+    margin-top: 20px;
+  }
+  
+  .auth-button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-button:hover {
+    background-color: #45a049;
+  }
+  
+  .profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info h2 {
+    margin-bottom: 10px;
+  }
+  
+  .genre-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .genre-item {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 0.9em;
+  }
+
+  .logout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f;
+  }

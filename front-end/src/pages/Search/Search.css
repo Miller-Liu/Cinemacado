@@ -1,0 +1,92 @@
+
+#SearchBlock {
+    display: flex;
+}
+
+#logo-container {
+    display: flex;
+    width: 10%;
+    min-width: 50px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border: 1px white solid;
+    border-radius: 20px;
+} 
+
+#logo-container svg {
+    fill: white;
+    height: 70%;
+}
+
+#input-container {
+    position: relative;
+    border-bottom: 1px white solid;
+    flex: auto;
+    margin-left: 10px;
+}
+
+#input-container input {
+    position: absolute;
+    bottom: 0;
+    line-height: 30px;
+    padding: 0 0 3px 7px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 20px;
+}
+
+#input-container input:focus {
+    outline: none;
+}
+
+#submitButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 0 10px;
+}
+
+#submitButton:hover {
+    cursor: pointer;
+}
+
+#submitButton svg {
+    height: 75%;
+    fill: white;
+}
+
+.MovieBlock {
+    width: 20%;
+    float: left;
+}
+
+.MoviePoster {
+    box-sizing: border-box;
+    padding-bottom: 150%;
+    overflow: hidden;
+    position: relative;
+}
+
+.MovieCover {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
+
+.moviesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    /* justify-content: center; */
+}
