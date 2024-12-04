@@ -1,9 +1,8 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Landing.css';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { Link } from 'react-router-dom';
-import Movie from "../../components/Movie/Movie";
 // import { UserContext } from '../../contexts/UserContext'
 
 export default function Landing() {

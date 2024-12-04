@@ -31,3 +31,5 @@ yarn-error.log*
 
 # API keys and other secrets
 secret.js
+firebase.js
+serviceAccountKey.json
